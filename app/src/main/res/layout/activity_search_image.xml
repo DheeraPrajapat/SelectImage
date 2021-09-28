@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchImage">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:autofillHints="no"
+        android:inputType="text"
+        android:id="@+id/searchText"
+        android:layout_marginStart="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchText"
+        android:text="Search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/searchButton"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_below="@id/searchButton"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageViewSearch"/>
+
+</RelativeLayout>
